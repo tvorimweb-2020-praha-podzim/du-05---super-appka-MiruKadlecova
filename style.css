@@ -1,0 +1,204 @@
+html {
+    box-sizing: border-box;
+    background-color: #e5e5e5;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 0 0 0 20 #423f3f;
+    max-width: 1200px;
+}
+
+.usp-nadpis {
+    color: #48418e;
+    font-weight: 700;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.icon {
+    width: 80px;
+}
+
+.usp {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+
+.usp-blok {
+    display: flex;
+    flex-direction: column;
+    padding: 0.9rem;
+}
+
+.usp-obrazek {
+    padding: 0.5rem;
+}
+
+
+footer {
+    color: white;
+    background-color: #48418e;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    color: #48418e;
+    font-size: 1.1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.menu-button {
+    flex-basis: 50%;
+    padding: 0.5rem;
+    white-space: nowrap;
+}
+
+.logo {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hlavicka {
+    background: rgb(37,19,61);
+    background: linear-gradient(90deg, rgba(37,19,61,1) 0%, rgba(170,84,119,1) 75%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.teaser {
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.hlavicka-obrazek {
+    display:none;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-weight: 300;
+    line-height: 150%;
+}
+
+.buttony {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tlacitko {
+    margin: 0.5rem;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.tlacitko:hover {
+    background-color: #48418e;
+}
+
+@media screen and (min-width: 768px) {
+    .menu {
+        flex-wrap: nowrap;
+        width: 75%;
+
+    }
+    
+    .menu-button {
+       padding: 1rem;
+       white-space: nowrap;
+    }
+
+    h1 {
+        font-size: 5rem;
+        padding-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+
+    .buttony {
+        flex-direction: row;
+        width: 50%;
+    }
+
+    .usp {
+        flex-direction: row;
+    }
+
+    .usp-obrazek {
+        order: 0;
+    }
+
+    .usp-nadpis {
+        order: 1;
+    }
+
+    .usp-popis {
+        order: 2;
+        padding: 1rem 0;
+    }
+
+    .icon {
+        width: 60px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .teaser {
+        width: 50%;
+    }
+
+    .buttony {
+        width: 90%;
+    }
+
+    .hlavicka {
+        flex-direction: row;
+    }
+
+    .hlavicka-obrazek {
+        display: block;
+        width: 50%;
+        position: relative;
+    }
+
+    .phone {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    
+}
+
